@@ -21,7 +21,7 @@ Technologies Used
 ---
 
 Project 2: To-Do List Application
-This project is a RESTful API for a simple To-Do List application, built using Java and the Spring Boot framework. It provides endpoints for managing tasks, including creating, reading, updating, and deleting to-do items. This project demonstrates core backend development concepts such as API design, data persistence, and error handling.
+This project is a RESTful API for a simple To-Do List application, built using Java and the Spring Boot framework. It provides endpoints for managing tasks, including creating, reading, updating, and deleting to-do items. This project demonstrates core backend development concepts such as API design, data persistence.
 
 Features
 
