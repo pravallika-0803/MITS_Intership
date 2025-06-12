@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #2d2d2d;
+    --calculator-bg: #1e1e1e;
+    --display-bg: #000;
+    --display-color: #fff;
+    --btn-bg: #2c2c2c;
+    --btn-hover-bg: #3d3d3d;
+    --operator-bg: #ff9500;
+    --operator-hover-bg: #ffa733;
+    --equal-bg: #04c2c9;
+    --equal-hover-bg: #25d6de;
+    --text-color: white;
+    --footer-color: #aaa;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--text-color);
+  }
+  
+  .calculator {
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--calculator-bg);
+    border-radius: 16px;
+    box-shadow: 0 0 20px #000;
+    padding: 20px;
+  }
+  
+  .calculator-header {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    background-color: var(--display-bg);
+    color: var(--display-color);
+    font-size: 2rem;
+    padding: 10px 15px;
+    text-align: right;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .display:focus {
+    outline: none;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  .btn {
+    padding: 18px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--btn-hover-bg);
+    transform: scale(1.05);
+  }
+  
+  .operator {
+    background-color: var(--operator-bg);
+  }
+  
+  .operator:hover {
+    background-color: var(--operator-hover-bg);
+  }
+  
+  .equal {
+    grid-column: span 2;
+    background-color: var(--equal-bg);
+  }
+  
+  .equal:hover {
+    background-color: var(--equal-hover-bg);
+  }
+  
+  .footer {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    color: var(--footer-color);
+    font-size: 0.9rem;
+  }
+  
