@@ -19,8 +19,6 @@ public class TaskResponse {
     private LocalDateTime updatedAt;
     private LocalDateTime completedAt;
 
-    public TaskResponse() {}
-
     public TaskResponse(Task task) {
         this.id = task.getId();
         this.title = task.getTitle();

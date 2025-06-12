@@ -52,11 +52,4 @@ public class Task {
     public Task() {
         this.createdAt = LocalDateTime.now();
     }
-
-    public Task(String title, String description, Priority priority) {
-        this();
-        this.title = title;
-        this.description = description;
-        this.priority = priority;
-    }
 }
